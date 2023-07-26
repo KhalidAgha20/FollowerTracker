@@ -103,9 +103,8 @@ while True:
     
     row = row + 1
     
-    browser.quit()
-    
-    
+
+browser.quit()
 wb.save(today + ".xlsx")
 
 

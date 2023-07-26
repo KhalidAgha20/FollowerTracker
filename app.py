@@ -27,7 +27,7 @@ while True:
     #html = get_html("https://socialblade.com/instagram/user/" + username + "/monthly")
     browser.get("https://socialblade.com/instagram/user/" + username + "/monthly")
     html = browser.page_source
-    time.sleep(2)
+    time.sleep(1)
     
     try:
         a, b, c = scraper(html)
@@ -56,7 +56,7 @@ while True:
     #html = get_html("https://socialblade.com/twitter/user/" + username + "/monthly")
     browser.get("https://socialblade.com/twitter/user/" + username + "/monthly")
     html = browser.page_source
-    time.sleep(2)
+    time.sleep(1)
     
     try:
         a, b, c = scraper(html)
@@ -86,7 +86,7 @@ while True:
     #html = get_html("https://socialblade.com/tiktok/user/" + username + "/monthly")
     browser.get("https://socialblade.com/tiktok/user/" + username + "/monthly")
     html = browser.page_source
-    time.sleep(2)
+    time.sleep(1)
     
     try:
         a, b, c = scraper(html)

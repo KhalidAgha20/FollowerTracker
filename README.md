@@ -22,7 +22,7 @@ pip3 install openpyxl selenium
 
 
 ### 3 - Download Code
-Download a zip file of this code and unzip the folder wherever you want to store it on your computer
+Download a zip file of this code and unzip the folder wherever you want to store it on your computer. You are now ready to use the program. 
 
 
 ## Operation Guide (MacOS)

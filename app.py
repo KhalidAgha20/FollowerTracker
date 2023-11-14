@@ -35,7 +35,7 @@ while True:
     
     try:
         a, b, c = scraper(html)
-        print(scraper(html))
+        print(f"Followers: {a},     Weekly Change: {b},     Monthly Change: {c}")
     except:
         a = "NO DATA"
         b = "NO DATA"
@@ -64,7 +64,7 @@ while True:
     
     try:
         a, b, c = scraper(html)
-        print(scraper(html))
+        print(f"Followers: {a},     Weekly Change: {b},     Monthly Change: {c}")
     except:
         a = "NO DATA"
         b = "NO DATA"
@@ -94,7 +94,7 @@ while True:
     
     try:
         a, b, c = scraper(html)
-        print(scraper(html))
+        print(f"Followers: {a},     Weekly Change: {b},     Monthly Change: {c}")
     except:
         a = "NO DATA"
         b = "NO DATA"

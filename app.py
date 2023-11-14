@@ -5,6 +5,10 @@ from datetime import datetime
 from selenium import webdriver
 import time
 
+#Variables
+logintime = 15
+breaktime = 1
+
 
 today = datetime.today().strftime('%Y-%m-%d')
 
@@ -13,7 +17,7 @@ ws = wb['Sheet']
 
 browser = webdriver.Chrome()
 browser.get("https://socialblade.com/login")
-time.sleep(15)
+time.sleep(logintime)
 
 row = 3
 while True:
@@ -27,7 +31,7 @@ while True:
     #html = get_html("https://socialblade.com/instagram/user/" + username + "/monthly")
     browser.get("https://socialblade.com/instagram/user/" + username + "/monthly")
     html = browser.page_source
-    time.sleep(1)
+    time.sleep(breaktime)
     
     try:
         a, b, c = scraper(html)
@@ -56,7 +60,7 @@ while True:
     #html = get_html("https://socialblade.com/twitter/user/" + username + "/monthly")
     browser.get("https://socialblade.com/twitter/user/" + username + "/monthly")
     html = browser.page_source
-    time.sleep(1)
+    time.sleep(breaktime)
     
     try:
         a, b, c = scraper(html)
@@ -86,7 +90,7 @@ while True:
     #html = get_html("https://socialblade.com/tiktok/user/" + username + "/monthly")
     browser.get("https://socialblade.com/tiktok/user/" + username + "/monthly")
     html = browser.page_source
-    time.sleep(1)
+    time.sleep(breaktime)
     
     try:
         a, b, c = scraper(html)
